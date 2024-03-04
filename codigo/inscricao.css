@@ -382,30 +382,6 @@ footer{
     transform: scale(1.1);
 }
 
-@media only screen and (min-width: 768px) {
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 10%;
-    }
-
-    .links {
-        flex-direction: row;
-    }
-
-    .botao {
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-
-    .dados label,
-    .endereco label {
-        width: 50%;
-        text-align: right;
-    }
-}
-
 @media screen and (max-width: 1115px) {
 
     /* Menu */
