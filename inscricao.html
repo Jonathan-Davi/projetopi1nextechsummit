@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscricao.css">
+    <link rel="shortcut icon" href="../img/favicon1.png" type="image/x-icon">
+    <title>Inscrição</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <img src="../img/banner.png" alt="Banner">
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="../img/logosfundo2.png" alt="NexTech"></a>
+        </div>
+
+        <ul class="links">
+            <li class="link"><a href="index.html">Página Inicial</a></li>
+            <li class="link"><a href="programacao.html">Programação</a></li>
+            <li class="link" id="pgatual"><a href="inscricao.html">Inscrição</a></li>
+            <li class="link"><a href="local.html">Local</a></li>
+            <li class="link"><a href="org.html">Organizadores</a></li>
+        </ul>
+        <a href="sobre.html" class="botao">Sobre Nós</a>
+    </nav>
+
+    <main>
+
+        <form action="agrad.html" method="get">
+            <section class="dados-pessoais">
+                <div class="dados">
+                    <fieldset>
+                        <legend><h2>Preencha seus <span>dados!</span></h2></legend>
+                        <p>* Indica um campo obrigatório!</p>
+                        <div class="obrigatorio">
+
+                            <div class="nome">
+                                <label for="nome">*Nome:</label>
+                                <input type="text" name="nome" id="nome" required placeholder="Nome">
+                            </div>
+
+                            <div class="email">
+                                <label for="email">*E-Mail:</label>
+                                <input type="email" name="E-Mail" id="email" required placeholder="E-Mail">
+                            </div>
+
+                            <div class="cpf">
+                                <label for="cpf">*CPF:</label>
+                                <input type="text" name="cpf" id="cpf" required placeholder="CPF" minlength="11">
+                            </div>
+
+                            <div class="telefone">
+                                <label for="telefone">*Telefone:</label>
+                                <input type="tel" name="telefone" id="telefone" required placeholder="(xx) xxxxx-xxxx" minlength="11">
+                            </div>
+                        </div>
+                        
+                        <div class="genero">
+                            <p>Gênero:</p>
+                            <div class="radio">
+                                <input type="radio" name="genero" id="masculino" value="masculino" checked>
+                                <label for="masculino">Masculino</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="genero" id="feminino" value="feminino">
+                                <label for="feminino">Feminino</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="genero" id="outro" value="outro">
+                                <label for="outro">Outro</label>
+                            </div>
+                        </div>
+
+                        <div class="endereco">
+                            <p>Endereço:</p>
+                            <div class="rua">
+                                <label for="rua">*Rua:</label>
+                                <input type="text" name="rua" id="rua" placeholder="Rua" required>
+                            </div>
+                            <div class="bairro">
+                                <label for="bairro">*Bairro:</label>
+                                <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+                            </div>
+                            <div class="numero">
+                                <label for="numero">*Numero:</label>
+                                <input type="text" name="numero" id="numero" placeholder="Numero" required>
+                            </div>
+                            <div class="estado">
+                                <p><label>*Estado:
+                                    <select name="estados" id="estado" required>
+                                        <option value="">Selecione...</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </label></p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </section>
+
+            <section class="atividades-evento">
+                <div class="atividades">
+                    <fieldset>
+                        <legend><h2>Atividades</h2></legend>
+                        <div class="aviso">
+                            <p>Selecione as atividades que deseja participar!</p>
+                            <p>Todas as atividades contém limite de vagas!</p>
+                            <p>Confira toda a programação clicando <a href="programacao.html">aqui!</a></p>
+                        </div>
+                        <div class="atvds">
+                            <div>
+                                <input type="checkbox" name="atividades[]" id="keynote" value="keynote">
+                                <label for="keynote">Dia 1 (04/03): 10:45 - 12:30: Keynote: "Visão 2030: O Futuro da Tecnologia", com o CEO da NexTech Innovations.</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="atividades[]" id="workshop" value="workshop">
+                                <label for="workshop">Dia 1 (04/03): 15:30 - 17:00: Sessões Paralelas: Workshops práticos sobre Inteligência Artificial, Blockchain e IoT.</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="atividades[]" id="palestra" value="palestra">
+                                <label for="palestra">Dia 2 (05/03): 09:00 - 10:30: Palestra: "A Revolução da Realidade Virtual e Aumentada".</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="atividades[]" id="apre" value="apre">
+                                <label for="apre">Dia 2 (05/03): 11:00 - 12:30: Apresentação: "Avanços em Tecnologia Espacial".</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="atividades[]" id="painel" value="painel">
+                                <label for="painel">Dia 3 (06/03): 11:00 - 12:30: Painel de Discussão: "Cibersegurança: Desafios Emergentes e Soluções Inovadoras".</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="atividades[]" id="hack" value="hack">
+                                <label for="hack">Dia 3 (06/03): 15:30 - 17:00: Hackathon: Desafio de Programação para Estudantes e Profissionais.</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="atividades[]" id="premi" value="premi">
+                                <label for="premi">Dia 4 (07/03): 11:00 - 12:30: Premiação do Hackathon e Reconhecimento dos Participantes Destacados.</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="atividades[]" id="net" value="net">
+                                <label for="net">Dia 4 (07/03): 13:30 - 15:00: Sessões de Networking: Oportunidade para conexões significativas e parcerias.</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="atividades[]" id="outros" value="outro">
+                                <label for="outro">Sei que posso ficar sem vaga, mas prefiro não definir alguma atividade.</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="botoes">
+                        <div class="envia-limpa">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <div class="conteudorodape">
+            <div class="icones">
+                <a href="https://wa.me/5534988740621" target="_blank"><img src="../img/wpp.png" alt="WhatsApp"></a>
+                <a href="https://www.instagram.com/jonathan.jpg__/" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/jonathan-davi-85a1622a8/" target="_blank"><img src="../img/linkedin.png" alt="Linkedin"></a>
+            </div>
+            <div class="infos">
+                <ul>
+                    <li><a href="https://wa.me/5534988740621" target="_blank">📞 Contato: (34) 98874-0621</a></li>
+                    <li><a href="#">📩 E-Mail: jonathandavi@ufu.br</a></li>
+                    <li><a href="sobre.html">💻 Conheça a nossa empresa</a></li>
+                    <li><a href="programacao.html">👋 Fique por dentro do evento</a></li> 
+                </ul>
+            </div>
+        <address>Todos os Direitos Reservados.©</address>
+        </div>
+    </footer>
+    
+</body>
+</html>

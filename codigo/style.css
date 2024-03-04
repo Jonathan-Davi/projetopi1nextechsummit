@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;300;400;500;600;700;800;900 & display=swap');
+
+/* Geral */
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+}
+
+body{
+    background-color: #101220;
+}
+
+/* Banner */
+
+.banner img{
+    padding-top: 2px;
+    width: 100%;
+}
+
+/* Navegador */
+
+nav{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-radius: 0px 0px 20px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+.logo{
+    max-width: 100px;
+}
+
+.logo img{
+    width: 100%;
+    display: flex;
+    min-width: 100px;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(171, 98, 240);
+    transition: all 0.3s ease; 
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.botao{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: black;
+    background-color: rgb(171, 98, 240);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-right: 100px;
+    text-decoration: none;
+}
+
+.botao:hover{
+    border-bottom: 2px solid #101220;
+    text-decoration: underline #101220;
+}
+
+#pgatual{
+    border: 1px solid rgb(171, 98, 240);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 15px rgb(171, 98, 240);
+}
+
+/* Conteúdo Topo */
+
+.sectopo{
+    display: flex;
+    margin: 20px 100px;
+    box-shadow: -5px -5px 5px rgb(171, 98, 240);
+    border-radius: 20px 20px 0px 0px;
+    padding: 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+}
+
+.sectopo ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#titulotopo{
+    color: rgb(171, 98, 240);
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: underline overline black;
+    padding: 2rem;
+    text-shadow: rgb(144, 144, 144) 0.1em 0.1em 0.1em;
+}
+
+#conteudotopo{
+    display: flex;
+    padding: 2rem;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.conteudotopo ul p{
+    padding: 0.5rem ;
+    font-size: 13px;
+    text-decoration: underline rgb(171, 98, 240);
+}
+
+/* Conteúdo Meio */
+
+span{
+    color: rgb(171, 98, 240);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.secmeio{
+    display: flex;
+    margin: 20px 100px;
+    box-shadow: 5px 5px 5px rgb(171, 98, 240);
+    border-radius: 0px 0px 20px 20px;
+    padding: 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+}
+
+.secmeio h4{
+    padding: 10px;
+    border-top: 1px solid rgb(171, 98, 240);
+}
+
+.secmeio a{
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.4s;
+    color: black;
+    font-weight: bold;
+}
+
+.secmeio a:hover{
+    transform: scale(1.1);
+    color: rgb(171, 98, 240);
+    text-decoration: underline rgb(171, 98, 240);
+}
+
+#titulomeio{
+    font-size: 22px;
+    padding: 2rem;
+    text-shadow: rgb(144, 144, 144) 0.1em 0.1em 0.1em;
+}
+
+.contmeio{
+    display: flex;
+    padding: 3rem 2rem 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contmeio img{
+    width: 400px;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    padding: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+.contmeio p{
+    text-align: justify;
+    width: 500px;
+    padding: 2rem;
+}
+
+.contfim{
+    border-top: 1px solid rgb(171, 98, 240);
+    line-height: 1.5rem;
+    padding: 2rem;
+}
+
+/* Conteudo Rodapé */
+
+footer{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: none;
+}
+
+.conteudorodape{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudorodape .icones{
+    border-bottom: 1px solid rgb(171, 98, 240);
+    text-align: center;
+    margin: 30px;
+}
+
+.conteudorodape address{
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    margin: 10px 30px auto 30px;
+    border-top: 1px solid rgb(171, 98, 240);
+}
+
+.conteudorodape .icones img{
+    margin: 10px;
+    width: 30px;
+}
+
+.infos{
+    text-align: center;
+}
+
+.infos ul{
+    list-style: none;
+}
+
+.infos a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: 0.6s;
+}
+
+.infos ul li{
+    padding: 3px;
+}
+
+.infos a:hover{
+    color:rgb(171, 98, 240);
+    transform: scale(1.1);
+    text-decoration: underline rgb(171, 98, 240);
+}
+
+.icones a{
+    display: inline-block;
+    transition: 0.6s;
+}
+
+.icones a:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1115px) {
+
+    /* Menu */
+
+    nav {
+        display: flex;
+        padding: 0.5rem;
+        gap: 1rem;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .link {
+        margin: 0;
+    }
+
+    .botao {
+        margin-right: 0;
+    }
+
+    /* Topo */
+
+    .sectopo {
+        margin: 20px;
+    }
+
+    #titulotopo {
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    #conteudotopo {
+        width: 100%;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .conteudotopo ul {
+        flex-direction: column;
+    }
+
+    .conteudotopo p{
+        font-size: 14px;
+    }
+
+    /* Meio */
+
+    .secmeio {
+        margin: 20px 20px;
+    }
+
+    #titulomeio {
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    .contmeio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .contmeio img {
+        width: 70%;
+        margin: 1rem;
+    }
+
+    .contmeio p {
+        width: 100%;
+        font-size: 14px;
+        text-align: justify;
+        padding: 1rem;
+    }
+
+    .contfim{
+        padding: 1rem;
+    }
+
+    .contfim p{
+        font-size: 14px;
+    }
+}
